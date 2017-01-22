@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -209,6 +209,22 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <text x="-2.032" y="1.778" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-2.032" y="3.302" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="EPSON-TSX-3225">
+<smd name="P$1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="P$4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-2.286" y1="1.778" x2="2.286" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.286" y1="1.778" x2="2.286" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.286" y1="-1.778" x2="-2.286" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-1.778" x2="-2.286" y2="1.778" width="0.127" layer="21"/>
+<text x="-2.286" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.286" y="4.318" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="XTAL">
@@ -371,6 +387,16 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-EPSON-TSX-3225" package="EPSON-TSX-3225">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$2 P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
