@@ -111,20 +111,20 @@
 <wire x1="16.51" y1="0" x2="16.51" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="16.51" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="0" y1="-12.7" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="!CE" x="-2.54" y="-2.54" length="short"/>
-<pin name="SO" x="-2.54" y="-5.08" length="short"/>
-<pin name="!WP" x="-2.54" y="-7.62" length="short"/>
-<pin name="GND" x="-2.54" y="-10.16" length="short"/>
-<pin name="VCC" x="19.05" y="-2.54" length="short" rot="R180"/>
-<pin name="!HOLD" x="19.05" y="-5.08" length="short" rot="R180"/>
-<pin name="SCK" x="19.05" y="-7.62" length="short" rot="R180"/>
-<pin name="SI" x="19.05" y="-10.16" length="short" rot="R180"/>
+<pin name="!CE" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="SO" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="!WP" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="VCC" x="19.05" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="!HOLD" x="19.05" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SCK" x="19.05" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SI" x="19.05" y="-10.16" visible="pin" length="short" rot="R180"/>
 <text x="0" y="1.27" size="2.54" layer="96">&gt;VALUE</text>
 <text x="0" y="5.08" size="2.54" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SPI-FLASH">
+<deviceset name="SPI-FLASH" prefix="U">
 <gates>
 <gate name="G$1" symbol="SPI-FLASH" x="-2.54" y="-2.54"/>
 </gates>
