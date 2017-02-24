@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.254" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1762,8 +1762,8 @@
 <wire x1="3.556" y1="-3.556" x2="-3.556" y2="-3.556" width="0.127" layer="21"/>
 <wire x1="-3.556" y1="-3.556" x2="-3.556" y2="3.556" width="0.127" layer="21"/>
 <polygon width="0.127" layer="21">
-<vertex x="-3.556" y="-1.27"/>
-<vertex x="-1.27" y="-3.556"/>
+<vertex x="-3.556" y="-2.032"/>
+<vertex x="-2.032" y="-3.556"/>
 <vertex x="-3.556" y="-3.556"/>
 </polygon>
 <text x="-3.556" y="4.064" size="1.27" layer="27">&gt;VALUE</text>
