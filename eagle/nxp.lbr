@@ -1559,7 +1559,7 @@ Surface-Mounted Device (SMD) plastic package.&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PMEG1020EA">
+<deviceset name="PMEG1020EA" prefix="D">
 <description>&lt;strong&gt;2A ultra low Vf MEGA Schottky barrier rectiﬁer&lt;/strong&gt;
 
 &lt;p&gt;Planar Maximum Efﬁciency General Application (MEGA) Schottky barrier rectiﬁer with an
