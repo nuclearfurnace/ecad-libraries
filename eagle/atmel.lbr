@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -185,6 +185,26 @@
 <vertex x="-1.27" y="1.778" curve="90"/>
 </polygon>
 </package>
+<package name="PDIP-8">
+<pad name="P$1" x="-3.81" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$2" x="-1.27" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$3" x="1.27" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$4" x="3.81" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$5" x="3.81" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$6" x="1.27" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$7" x="-1.27" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$8" x="-3.81" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-4.445" y1="0.9525" x2="-3.4925" y2="0.9525" width="0.254" layer="21"/>
+<wire x1="-3.4925" y1="0.9525" x2="-2.54" y2="0" width="0.254" layer="21" curve="-90"/>
+<wire x1="-2.54" y1="0" x2="-3.4925" y2="-0.9525" width="0.254" layer="21" curve="-90"/>
+<wire x1="-3.4925" y1="-0.9525" x2="-4.445" y2="-0.9525" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="2.2225" x2="-4.445" y2="0.9525" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="0.9525" x2="-4.445" y2="-0.9525" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="-0.9525" x2="-4.445" y2="-2.2225" width="0.254" layer="21"/>
+<wire x1="4.445" y1="2.2225" x2="4.445" y2="-2.2225" width="0.254" layer="21"/>
+<text x="-4.445" y="6.35" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-4.445" y="8.255" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATTINYX5">
@@ -251,6 +271,21 @@
 <connect gate="G$1" pin="PB4" pad="3"/>
 <connect gate="G$1" pin="PB5" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="85-20PU" package="PDIP-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$4"/>
+<connect gate="G$1" pin="PB0" pad="P$5"/>
+<connect gate="G$1" pin="PB1" pad="P$6"/>
+<connect gate="G$1" pin="PB2" pad="P$7"/>
+<connect gate="G$1" pin="PB3" pad="P$2"/>
+<connect gate="G$1" pin="PB4" pad="P$3"/>
+<connect gate="G$1" pin="PB5" pad="P$1"/>
+<connect gate="G$1" pin="VCC" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>

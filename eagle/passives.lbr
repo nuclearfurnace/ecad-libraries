@@ -1320,6 +1320,19 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-1.524" y="1.778" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-1.524" y="3.302" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="RADIAL-D8-P3.5-PD0.5">
+<pad name="-" x="-1.75" y="0" drill="0.8"/>
+<pad name="+" x="1.75" y="0" drill="0.8"/>
+<circle x="0" y="0" radius="4" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-4" y="0" curve="-90"/>
+<vertex x="0" y="4"/>
+<vertex x="0" y="-4" curve="-90"/>
+</polygon>
+<text x="4.699" y="-0.508" size="1.27" layer="21">+</text>
+<text x="-3.81" y="5.08" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.81" y="6.985" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-POLARIZED">
@@ -1823,6 +1836,15 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </technologies>
 </device>
 <device name="CHEMICON_F55" package="CHEMICON_F55">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-RADIAL-D8-P3.5-PD0.5" package="RADIAL-D8-P3.5-PD0.5">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
