@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -137,15 +138,15 @@
 <smd name="P$63" x="-5.68" y="-3.25" dx="1.6" dy="0.28" layer="1"/>
 <smd name="P$64" x="-5.68" y="-3.75" dx="1.6" dy="0.28" layer="1"/>
 <smd name="P$65" x="0" y="0" dx="5.31" dy="5.31" layer="1" cream="no"/>
-<pad name="P$66" x="-1.5" y="1.5" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$67" x="0" y="1.5" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$68" x="1.5" y="1.5" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$69" x="-1.5" y="0" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$70" x="0" y="0" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$71" x="1.5" y="0" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$72" x="-1.5" y="-1.5" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$73" x="0" y="-1.5" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="P$74" x="1.5" y="-1.5" drill="0.3" diameter="0.6" stop="no"/>
+<pad name="P$66" x="-1.5" y="1.5" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$67" x="0" y="1.5" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$68" x="1.5" y="1.5" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$69" x="-1.5" y="0" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$70" x="0" y="0" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$71" x="1.5" y="0" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$72" x="-1.5" y="-1.5" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$73" x="0" y="-1.5" drill="0.3048" diameter="0.6096" stop="no"/>
+<pad name="P$74" x="1.5" y="-1.5" drill="0.3048" diameter="0.6096" stop="no"/>
 <rectangle x1="-2.25" y1="1.02" x2="-1.02" y2="2.25" layer="31"/>
 <rectangle x1="-0.615" y1="1.02" x2="0.615" y2="2.25" layer="31"/>
 <rectangle x1="1.02" y1="1.02" x2="2.25" y2="2.25" layer="31"/>
