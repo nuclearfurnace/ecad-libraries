@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1333,6 +1334,24 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-3.81" y="5.08" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-3.81" y="6.985" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="C1812">
+<wire x1="-2.7525" y1="2.025" x2="2.7525" y2="2.025" width="0.127" layer="39"/>
+<wire x1="2.7525" y1="-2.025" x2="-2.7525" y2="-2.025" width="0.127" layer="39"/>
+<wire x1="-2.7525" y1="-2.025" x2="-2.7525" y2="2.025" width="0.127" layer="39"/>
+<wire x1="-1.6" y1="1.55" x2="1.6" y2="1.55" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="-1.55" x2="1.6" y2="-1.55" width="0.1" layer="51"/>
+<wire x1="2.7525" y1="2.025" x2="2.7525" y2="-2.025" width="0.127" layer="39"/>
+<smd name="1" x="-2.2" y="0" dx="0.9" dy="3.8" layer="1"/>
+<smd name="2" x="2.2" y="0" dx="0.9" dy="3.8" layer="1"/>
+<text x="-2.54" y="4.191" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="2.667" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.25" y1="-1.6" x2="-1.6" y2="1.6" layer="51"/>
+<rectangle x1="1.6" y1="-1.6" x2="2.25" y2="1.6" layer="51"/>
+<wire x1="-2.7525" y1="2.025" x2="2.7525" y2="2.025" width="0.127" layer="21"/>
+<wire x1="2.7525" y1="2.025" x2="2.7525" y2="-2.025" width="0.127" layer="21"/>
+<wire x1="2.7525" y1="-2.025" x2="-2.7525" y2="-2.025" width="0.127" layer="21"/>
+<wire x1="-2.7525" y1="-2.025" x2="-2.7525" y2="2.025" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-POLARIZED">
@@ -1977,6 +1996,15 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-1812" package="C1812">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CAPACITOR-HORIZONTAL" prefix="C">
@@ -2043,6 +2071,15 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1812" package="C1812">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
